@@ -3,7 +3,15 @@
     --alternate-color: #f1f1f1;
 }
 
-/* Mobile */
+::-moz-selection  {
+    background: #2d96cd;
+}
+
+::selection {
+    background-color: #2d96cd;
+}
+
+/******************** Mobile ********************/
 @media screen and (max-width: 500px) {
 
     .content {
@@ -15,15 +23,10 @@
         margin-top: 4rem;
         padding-bottom: 2rem;
     }
-
-    /*svg {
-        height: 75%;
-        width: 75%;
-    }*/
-
 }
 
-/* New stuff */
+
+/******************** Layout *********************/
 body {
     height: 100vh;
     margin-top: 0;
@@ -79,15 +82,7 @@ footer {
 }
 
 
-::-moz-selection  {
-    background: #2d96cd;
-}
-
-::selection {
-    background-color: #2d96cd;
-}
-
-/* Utility classes */
+/******************** Utilities ********************/
 .theme-light {
     color: var(--default-color);
     background-color: var(--alternate-color);
@@ -130,6 +125,8 @@ footer {
     text-align: center;
 }
 
+
+/******************** More specific ********************/
 #map {
     width: 70vw;
     height: 60vh;
@@ -178,73 +175,3 @@ a:hover, .nav__link:focus {
 .social__link {
     padding: 0 20px;
 }
-
-
-/* More specific */
-
-/*
-body {
-    font-family: 'Cutive Mono', sans-serif;
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: center;
-}*/
-
-
-/*
-.container {
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-}
-*/
-
-/*
-nav {
-    position: sticky;
-    top: 15px;
-    display: flex;
-    justify-content: space-around;
-    transform: skew(45deg);
-}
-*/
-
-/*
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-}
-*/
-
-/*
-.social {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 20px;
-    width: 100%;
-}
-
-.social__link {
-    padding: 0 20px;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    bottom: 0;
-    font-size: .75rem;
-}
-
-footer {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
-    text-align: center;
-    font-size: .75rem;
-  }
