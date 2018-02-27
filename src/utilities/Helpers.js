@@ -2,7 +2,7 @@ const m = require('mithril')
 const feather = require('feather-icons')
 
 
-module.exports = { 
+module.exports = {
     generateIcon(name) {
         return m.trust(feather.icons[name].toSvg()) // I hope there's a better way to do this 
     },

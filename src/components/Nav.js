@@ -25,26 +25,46 @@ module.exports = {
 
             m('a[href=/nsfaq].nav__link', {
                 title: titles.faq,
-                oncreate: m.route.link,
+                //oncreate: m.route.link,
                 //onupdate: m.route.link
+                onclick: (e) => {
+                    e.preventDefault()
+                    m.route.set('/nsfaq')
+                    window.scrollTo(0, 0)
+                }
             }, helper.generateIcon('help-circle')),
 
             m('a[href=/about].nav__link', {
                 title: titles.about,
-                oncreate: m.route.link,
+                //oncreate: m.route.link,
                 //onupdate: m.route.link
+                onclick: (e) => {
+                    e.preventDefault()
+                    m.route.set('/about')
+                    window.scrollTo(0, 0)
+                }
             }, helper.generateIcon('user')),
 
             m('a[href=/].nav__link', {
                 title: titles.home,
-                oncreate: m.route.link,
+                //oncreate: m.route.link,
                 //onupdate: m.route.link
+                onclick: (e) => {
+                    e.preventDefault()
+                    m.route.set('/')
+                    window.scrollTo(0, 0)
+                }
             }, helper.generateIcon('home')),
 
             m('a[href=/map].nav__link', {
                 title: titles.map,
-                oncreate: m.route.link,
+                //oncreate: m.route.link,
                 //onupdate: m.route.link
+                onclick: (e) => {
+                    e.preventDefault()
+                    m.route.set('/map')
+                    window.scrollTo(0, 0)
+                }
             }, helper.generateIcon('map-pin')),
 
             m(`a.nav__link`, {

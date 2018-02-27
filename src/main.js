@@ -9,7 +9,7 @@ const Error = require('./views/Error')
 
 
 // Uncomment in production 
-// m.route.prefix('') 
+m.route.prefix('') 
 
 
 m.route(document.body, '/', {
@@ -28,7 +28,6 @@ m.route(document.body, '/', {
     '/map': {
         render() {
             return m(Layout, m(Map))
-            //return m(Layout, 'Still working on it...')
         }
     },
 

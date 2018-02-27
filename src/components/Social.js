@@ -32,7 +32,7 @@ const icons = [
 module.exports = {
     view() {
         return m('div.social', icons.map((icon) => { 
-            return m(`a[href=${icon.url}].social__link`, { title: icon.title, target: '_blank' }, helper.generateIcon(icon.name))
+            return m(`a[href=${icon.url}].social__link`, { title: icon.title, target: '_blank', rel: 'noopener' }, helper.generateIcon(icon.name))
         }))
     }
 }

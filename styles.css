@@ -15,11 +15,11 @@
 @media screen and (max-width: 500px) {
 
     .content {
-        font-size: .85rem;
+        font-size: 1rem;
     }
 
     footer {
-        font-size: .25rem !important;
+        font-size: .5rem !important;
         margin-top: 4rem;
         padding-bottom: 2rem;
     }
@@ -35,7 +35,7 @@ body {
     display: flex;
     justify-content: center;
     font-family: 'Cutive Mono', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .grid {
@@ -76,7 +76,7 @@ footer {
     grid-area: footer;
     display: flex;
     justify-content: center;
-    font-size: .75rem;
+    font-size: 1rem;
     margin-top: 3rem;
     padding-bottom: 2rem;
 }
@@ -132,12 +132,6 @@ footer {
     height: 60vh;
 }
 
-.pro-pic {
-    width: 100px;
-    height: 100px;
-}
-
-
 a {
     color: inherit;
 }   
@@ -159,9 +153,8 @@ a:hover, .nav__link:focus {
 }
 
 .title {
-    display: flex;
-    justify-content: center;
     font-weight: bold;
+    text-align: center;
 }
 
 .social {
