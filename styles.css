@@ -34,7 +34,7 @@ body {
     margin-left: 0;
     display: flex;
     justify-content: center;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.5rem;
 }
 
@@ -153,7 +153,7 @@ a:hover, .nav__link:focus {
 }
 
 .title {
-    font-family: 'Cutive Mono', sans-serif;
+    font-family: 'Cutive Mono', serif;
     font-weight: bold;
     text-align: center;
 }
