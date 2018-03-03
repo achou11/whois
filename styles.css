@@ -169,3 +169,13 @@ a:hover, .nav__link:focus {
 .social__link {
     padding: 0 20px;
 }
+
+
+/******************** Map ********************/
+.popup-city {
+    font-family: 'Cutive Mono', sans-serif;
+}
+
+.popup-text {
+    font-family: 'Raleway', serif;
+}

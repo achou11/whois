@@ -11,12 +11,6 @@ const titles = {
 }
 
 
-/*
-Which bug is better?
-1. Scroll to top for each nav icon pressed, even the theme toggler.
-2. No scroll to top for any of the nav icons.
-*/
-
 // Add onclick method to keep nav icon of current page highlighted
 // Not working with anchor tags
 module.exports = {
@@ -70,7 +64,7 @@ module.exports = {
             m(`a.nav__link`, {
                 title: titles.theme,
                 onclick: helper.changeTheme
-            }, helper.generateIcon('eye'))
+            }, document.body.className === 'theme-light' ? helper.generateIcon('sun') : helper.generateIcon('moon'))
         ])
     }
 
