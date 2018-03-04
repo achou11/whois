@@ -16,7 +16,6 @@ const layer = {
                     "end": "2015"
                 },
                 "description": "I grew up here. Not much of a choice for this one.",
-                "icon": "monument"
             }
         },
         {
@@ -32,8 +31,7 @@ const layer = {
                     "end": "present"
                 },
                 "description": "Pursuing a B.S. in mathematics @ <a href='https://www.utexas.edu/' target='_blank' rel='noopener'>UT Austin</a>. Emphasis on the B.S. 😉",
-                "icon": "monument"
-            },
+            }
 
         },
         {
@@ -48,8 +46,7 @@ const layer = {
                     "start": "2016 (Summer)",
                     "end": null
                 },
-                "description": "Spent the summer with my twin brother, who goes to UW, and worked as a cashier @ <a href='https://www.pacificsciencecenter.org/' target='_blank' rel='noopener'>Pacific Science Center</a>.",
-                "icon": "harbor"
+                "description": "Spent the summer with my twin brother, who goes to UW, and worked as a cashier @ <a href='https://www.pacificsciencecenter.org/' target='_blank' rel='noopener'>Pacific Science Center</a>."
             }
         },
         {
@@ -64,8 +61,7 @@ const layer = {
                     "start": "2017 (Summer)",
                     "end": null
                 },
-                "description": "Data intern @ <a href='https://nexttier.com/' target='_blank' rel='noopener'>NextTier Education</a> and mapping intern @ <a href='https://www.hotosm.org/'  target='_blank' rel='noopener'>Humanitarian OpenStreetMap Team</a> (HOT).",
-                "icon": "harbor"
+                "description": "Data intern @ <a href='https://nexttier.com/' target='_blank' rel='noopener'>NextTier Education</a> and mapping intern @ <a href='https://www.hotosm.org/'  target='_blank' rel='noopener'>Humanitarian OpenStreetMap Team</a> (HOT)."
             }
         }
     ]
@@ -87,11 +83,13 @@ function onEachFeature(feature, layer) {
     if (feature.properties) {
         let props = feature.properties
 
-        layer.bindPopup(`
+        layer.bindPopup(
+            `
             <h2 class="popup-city">${props.name}</h2>
             <p class="popup-text"><b>WHEN</b>: ${props.period.start} ${props.period.end ? `- ${props.period.end}` : ``}</p>
             <p class="popup-text"><b>WHY</b>: ${props.description}</p>
-        `)
+            `
+        )
     }
 }
 
