@@ -12,7 +12,7 @@
 }
 
 /******************** Mobile ********************/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 
     .content {
         font-size: 1rem;
@@ -24,6 +24,16 @@
         padding-bottom: 2rem;
     }
 }
+
+@media screen and (max-width: 700px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
 
 
 /******************** Layout *********************/
@@ -75,8 +85,8 @@ nav {
 footer {
     grid-area: footer;
     display: flex;
-    justify-content: center;
-    font-size: 1rem;
+    justify-content: space-between;
+    font-size: .85rem;
     margin-top: 3rem;
     padding-bottom: 2rem;
 }
@@ -162,12 +172,12 @@ a:hover, .nav__link:focus {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 4rem;
     width: 100%;
 }
 
 .social__link {
-    padding: 0 20px;
+    padding: 0 1.5rem;
 }
 
 

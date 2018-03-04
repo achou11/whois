@@ -46,32 +46,24 @@ m.route(document.body, '/', {
 
 
 // Change nav bar style on scroll
-window.addEventListener('scroll', function (e) {
+window.addEventListener('scroll', function () {
     
     let navBar = document.getElementById('nav-bar')
 
-    if (window.pageYOffset <= 20) {
+    if (window.pageYOffset <= 30) {
 
-        switch (navBar.classList.contains('background-light')) {
-            
-            case true:
-                navBar.classList.remove('border-dark-thin')
-                break
-
-            case false:
-                navBar.classList.remove('border-light-thin')
+        if (navBar.classList.contains('background-light')) {
+            navBar.classList.remove('border-dark-thin')
+        } else {
+            navBar.classList.remove('border-light-thin')
         }
+
     } else {
 
-        switch (navBar.classList.contains('background-light')) {
-    
-            case true:
-                navBar.classList.add('border-dark-thin')
-                break
-
-            case false:
-                navBar.classList.add('border-light-thin')
-                break
+        if (navBar.classList.contains('background-light')) {
+            navBar.classList.add('border-dark-thin')
+        } else {
+            navBar.classList.add('border-light-thin')
         }
     }
 })

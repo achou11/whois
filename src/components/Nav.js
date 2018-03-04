@@ -19,8 +19,6 @@ module.exports = {
 
             m('a[href=/nsfaq].nav__link', {
                 title: titles.faq,
-                //oncreate: m.route.link,
-                //onupdate: m.route.link
                 onclick: (e) => {
                     e.preventDefault()
                     m.route.set('/nsfaq')
@@ -30,8 +28,6 @@ module.exports = {
 
             m('a[href=/about].nav__link', {
                 title: titles.about,
-                //oncreate: m.route.link,
-                //onupdate: m.route.link
                 onclick: (e) => {
                     e.preventDefault()
                     m.route.set('/about')
@@ -41,8 +37,6 @@ module.exports = {
 
             m('a[href=/].nav__link', {
                 title: titles.home,
-                //oncreate: m.route.link,
-                //onupdate: m.route.link
                 onclick: (e) => {
                     e.preventDefault()
                     m.route.set('/')
@@ -52,8 +46,6 @@ module.exports = {
 
             m('a[href=/map].nav__link', {
                 title: titles.map,
-                //oncreate: m.route.link,
-                //onupdate: m.route.link
                 onclick: (e) => {
                     e.preventDefault()
                     m.route.set('/map')

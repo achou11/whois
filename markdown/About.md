@@ -12,5 +12,5 @@ Languages and tech that I've worked with or have picqued my interest include:
 - Rust
 - Elixir
 - R
-- SQL and relational databases (PostgresQL and SQLite)
+- SQL and relational databases (PostgreSQL and SQLite)
 - NoSQL databases (Mongo is interesting but there are a ton of other cool solutions too)

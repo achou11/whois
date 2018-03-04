@@ -1,5 +1,6 @@
 const m = require('mithril')
 const Nav = require('../components/Nav')
+const Footer = require('../components/Footer')
 
 
 module.exports = {
@@ -7,7 +8,7 @@ module.exports = {
         return m('div.grid', [
             m(Nav),
             m('div.content-wrapper', m('div.content', vnode.children)),
-            m('footer', m.trust('<span>Copyright &copy; 2018 Andrew Chou</span>'))
+            m(Footer)//m('footer', m.trust('<span>Copyright &copy; 2018 Andrew Chou</span>'))
         ])
     }
 }
