@@ -8,7 +8,7 @@ module.exports = {
         return m('div.grid', [
             m(Nav),
             m('div.content-wrapper', m('div.content', vnode.children)),
-            m(Footer)//m('footer', m.trust('<span>Copyright &copy; 2018 Andrew Chou</span>'))
+            m(Footer)
         ])
     }
 }
