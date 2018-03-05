@@ -13,14 +13,14 @@ module.exports = {
         path: path.resolve(__dirname, 'dist')
     },
     plugins: [
-        new webpack.optimize.UglifyJsPlugin()
+        new webpack.optimize.UglifyJsPlugin({
+            minimize: true
+        })
     ],
     module: {
-        rules: [
-            { 
+        rules: [{
                 test: /\.md$/,
-                use: [
-                    {
+                use: [{
                         loader: "html-loader"
                     },
                     {
@@ -35,10 +35,14 @@ module.exports = {
                     }
                 ]
             },
-            { 
-                test: /\.js$/, 
-                exclude: /node_modules/, 
-                loader: "babel-loader" 
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: "babel-loader"
+            },
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
             }
         ]
     }

@@ -1,6 +1,7 @@
 const m = require('mithril')
 const L = require('leaflet')
 
+
 const layer = {
     "type": "FeatureCollection",
     "features": [{
