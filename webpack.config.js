@@ -17,6 +17,10 @@ module.exports = {
             minimize: true
         })
     ],
+    devServer: {
+        index: 'index.html',
+        compress: true
+    },
     module: {
         rules: [{
                 test: /\.md$/,

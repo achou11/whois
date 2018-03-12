@@ -95,7 +95,7 @@ function onEachFeature(feature, layer) {
 }
 
 
-
+// Add some listener to map for phone rotation?
 const MapComponent = function () {
     let map
 
@@ -113,7 +113,7 @@ const MapComponent = function () {
 
             const map = L.map('map', {
                 zoomControl: false
-            }).setView([38, -98], 4)
+            }).setView([38, -98], window.innerWidth > 550 ? 4 : 3)
 
             L.tileLayer('https://api.mapbox.com/styles/v1/andrewchou/cj3nmat3z002b2sqnvy3g2c04/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYW5kcmV3Y2hvdSIsImEiOiJjajJqeXR5b2cwMGRiMnFucW53NWJmNjlnIn0.LmmouuLX7C6EE61cOUez3A', {
                 maxZoom: 15,

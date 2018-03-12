@@ -2,14 +2,12 @@ const m = require('mithril')
 
 const Layout = require('./views/Layout')
 const Home = require('./views/Home')
-const About = require('./views/About')
+const Mdpage = require('./views/Mdpage')
 const Map = require('./views/Map')
-const Faq = require('./views/Faq')
 const Error = require('./views/Error')
 
-
 // Uncomment in production 
-m.route.prefix('') 
+m.route.prefix('')
 
 
 m.route(document.body, '/', {
@@ -20,11 +18,16 @@ m.route(document.body, '/', {
     },
 
     '/about': {
+        /* Old
         render() {
             return m(Layout, m(About))
         }
+        */
+        render() {
+            return m(Layout, m(Mdpage, { title: 'About' }))
+        }
     },
-    
+
     '/map': {
         render() {
             return m(Layout, m(Map))
@@ -32,8 +35,14 @@ m.route(document.body, '/', {
     },
 
     '/nsfaq': {
+        /* Old
         render() {
             return m(Layout, m(Faq))
+        }
+        */
+
+        render() {
+            return m(Layout, m(Mdpage, { title: 'Not-So-FAQs' }))
         }
     },
 
@@ -41,13 +50,13 @@ m.route(document.body, '/', {
         render() {
             return m(Layout, m(Error))
         }
-    }
+    },
 })
 
 
 // Change nav bar style on scroll
 window.addEventListener('scroll', function () {
-    
+
     let navBar = document.getElementById('nav-bar')
 
     if (window.pageYOffset <= 30) {
