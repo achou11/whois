@@ -1,7 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const marked = require('marked');
-
+const CompressionPlugin = require('compression-webpack-plugin')
 
 const renderer = new marked.Renderer();
 
@@ -15,6 +15,13 @@ module.exports = {
     plugins: [
         new webpack.optimize.UglifyJsPlugin({
             minimize: true
+        }),
+        new CompressionPlugin({
+            asset: "[path].gz[query]",
+            algorithm: "gzip",
+            test: /\.js$|\.css$|\.html$/,
+            threshold: 10240,
+            minRatio: 0.8
         })
     ],
     devServer: {

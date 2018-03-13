@@ -19,7 +19,7 @@
     }
 
     footer {
-        font-size: .5rem !important;
+        font-size: .75rem !important;
         margin-top: 4rem;
         padding-bottom: 2rem;
     }
@@ -86,7 +86,7 @@ footer {
     grid-area: footer;
     display: flex;
     justify-content: space-between;
-    font-size: .85rem;
+    font-size: 1rem;
     margin-top: 3rem;
     padding-bottom: 2rem;
 }
