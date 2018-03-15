@@ -17,12 +17,13 @@ m.route(document.body, '/', {
         }
     },
 
-    '/about': {
-        /* Old
+    '/nsfaq': {
         render() {
-            return m(Layout, m(About))
+            return m(Layout, m(Mdpage, { title: 'Not-So-FAQs' }))
         }
-        */
+    },
+
+    '/about': {
         render() {
             return m(Layout, m(Mdpage, { title: 'About' }))
         }
@@ -31,18 +32,6 @@ m.route(document.body, '/', {
     '/map': {
         render() {
             return m(Layout, m(Map))
-        }
-    },
-
-    '/nsfaq': {
-        /* Old
-        render() {
-            return m(Layout, m(Faq))
-        }
-        */
-
-        render() {
-            return m(Layout, m(Mdpage, { title: 'Not-So-FAQs' }))
         }
     },
 

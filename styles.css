@@ -44,7 +44,7 @@ body {
     margin-left: 0;
     display: flex;
     justify-content: center;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 1.5rem;
 }
 
@@ -183,9 +183,9 @@ a:hover, .nav__link:focus {
 
 /******************** Map ********************/
 .popup-city {
-    font-family: 'Cutive Mono', sans-serif;
+    font-family: 'Cutive Mono', serif;
 }
 
 .popup-text {
-    font-family: 'Raleway', serif;
+    font-family: 'IBM Plex Sans', sans-serif;
 }

@@ -142,9 +142,10 @@ const MapComponent = function () {
         // This shit ain't working
         /*
         onremove() {
-            L.map.remove()
+            map.remove()
         },
         */
+        
 
         view() {
             return m('#map')

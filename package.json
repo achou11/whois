@@ -5,7 +5,8 @@
   "scripts": {
     "start": "webpack -d --watch",
     "build": "webpack -p",
-    "dev-server": "webpack-dev-server --open"
+    "dev-server": "webpack-dev-server --open",
+    "live-server": "live-server --port=8000 --entry-file='./index.html'"
   },
   "author": {
     "name": "Andrew Chou",

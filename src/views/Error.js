@@ -1,5 +1,4 @@
 const m = require('mithril')
-const helper = require('../utilities/Helpers')
 
 module.exports = {
     view() {
