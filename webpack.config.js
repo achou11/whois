@@ -7,15 +7,7 @@ const renderer = new marked.Renderer();
 
 
 module.exports = {
-    entry: './src/main.js',
-    output: {
-        filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist')
-    },
     plugins: [
-        new webpack.optimize.UglifyJsPlugin({
-            minimize: true
-        }),
         new CompressionPlugin({
             asset: "[path].gz[query]",
             algorithm: "gzip",
@@ -26,7 +18,10 @@ module.exports = {
     ],
     devServer: {
         index: 'index.html',
-        compress: true
+        compress: true,
+        open: true,
+        historyApiFallback: true,
+        hot: true,
     },
     module: {
         rules: [{
@@ -49,7 +44,9 @@ module.exports = {
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                loader: "babel-loader"
+                use: {
+                    loader: "babel-loader"
+                }
             }
         ]
     }
