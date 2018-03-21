@@ -4,7 +4,7 @@
 
 - `npm install` -> install dependencies for project
 - `npm start` -> use for development and watch for file changes
-- `npm build` -> generate optimized bundle
+- `npm run build` -> generate optimized bundle
 - `npm run dev-server` -> use `webpack-dev-server` to start a dev server (non-optimized bundle)
 - `npm run prod-server` -> use `webpack-dev-server` to start a server that serves optimized bundle
 
