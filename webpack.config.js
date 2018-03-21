@@ -1,5 +1,3 @@
-const path = require('path');
-const webpack = require('webpack');
 const marked = require('marked');
 const CompressionPlugin = require('compression-webpack-plugin')
 
