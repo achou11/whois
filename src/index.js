@@ -42,7 +42,8 @@ m.route(document.body, '/', {
     },
 })
 
-
+// REFACTOR THIS SHIT!
+// IT NEEDS TO GO IN Nav.js BUT I DON'T UNDERSTAND HOW TO DO IT
 // Change nav bar style on scroll
 window.addEventListener('scroll', function () {
 
