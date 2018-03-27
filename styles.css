@@ -13,28 +13,22 @@
 
 /******************** Mobile ********************/
 @media screen and (max-width: 600px) {
-
     .content {
         font-size: 1rem;
     }
 
     footer {
         font-size: .75rem !important;
-        margin-top: 4rem;
-        padding-bottom: 2rem;
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
     footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
-        margin-bottom: 1rem;
     }
 }
-
 
 
 /******************** Layout *********************/
@@ -55,6 +49,8 @@ body {
     grid-template-areas: 
       "nav"
       "content"
+      "_"
+      "_"
       "footer"
     ;
     width: 75%;
@@ -63,7 +59,7 @@ body {
 nav {
     grid-area: nav;
     position: sticky;
-    top: 15;
+    top: 25px;
     display: flex;
     justify-content: space-around;
     transform: skew(45deg);
@@ -87,9 +83,9 @@ footer {
     grid-area: footer;
     display: flex;
     justify-content: space-between;
+    align-self: flex-end;
     font-size: 1rem;
-    margin-top: 3rem;
-    padding-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -114,14 +110,12 @@ footer {
 
 .border-light-thin {    
     border: 1px solid var(--alternate-color);
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding: 3px 0 3px 0;
 }
 
 .border-dark-thin {
     border: 1px solid var(--default-color);
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding: 3px 0 3px 0;
 }
 
 .background-light {
