@@ -1,18 +1,24 @@
 const m = require('mithril')
 
 module.exports = {
+    oncreate() {
+        let sourceUrl = document.getElementById('source-url')
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const isDat = window.DatArchive && window.location.origin.startsWith('dat:')
+            const url = isDat
+              ? `beaker://library/${window.location}`
+              : 'https://github.com/achou11/andrewchou-site'
+          
+            sourceUrl.href = url
+          }
+        )
+    },
+
     view() {
         return m('footer', [
             m.trust('<span>Copyright &copy; 2018 Andrew Chou</span>'),
-            m('span', [
-                'Built with ',
-                m('a[href="https://mithril.js.org"]', { target: '_blank', rel: 'noopener' }, 'Mithril'),
-                ', ',
-                m('a[href="https://feathericons.com"]', { target: '_blank', rel: 'noopener' }, 'Feather Icons'),
-                ', and ',
-                m('a[href="http://leafletjs.com"]', { target: '_blank', rel: 'noopener' }, 'Leaflet'),
-                '.'
-            ])
+            m('a#source-url', { target: '_blank', rel: 'noopener'}, 'View Source')
         ])
     }
 }
