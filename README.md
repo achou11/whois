@@ -1,4 +1,4 @@
-# This is the source code for my soon-to-be personal site.
+# This is the source code for personal site: whois-andrewchou.hashbase.io
 
 ## Some useful commands if you clone this repo:
 
@@ -10,3 +10,14 @@
 
 
 Feel free to reach out to me about tips or suggestions! If you want to add an issue or even submit a pull request, that works too :)
+
+
+## Libraries, tools, and frameworks used in this project:
+
+- [Mithril](https://mithril.js.org)
+- [Leaflet](https://leafletjs.org)
+- [Feather Icons](https://feathericons.com)
+- [Marked](https://marked.js.org)
+- [Gopherize.me](https://gopherize.me)
+- [webpack](https://webpack.js.org)
+- [Babel](https://babeljs.io)
