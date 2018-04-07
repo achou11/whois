@@ -45,7 +45,7 @@ body {
     display: flex;
     justify-content: center;
     font-family: 'IBM Plex Mono', 'Courier New', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .grid {
