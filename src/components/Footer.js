@@ -8,7 +8,7 @@ module.exports = {
             const isDat = window.DatArchive && window.location.origin.startsWith('dat:')
             const url = isDat
               ? `beaker://library/${window.location}`
-              : 'https://github.com/achou11/andrewchou-site'
+              : 'https://github.com/achou11/whois'
           
             sourceUrl.href = url
           }
