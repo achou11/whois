@@ -29,7 +29,7 @@ const layer = {
                 "name": "Austin, Texas",
                 "period": {
                     "start": "2015",
-                    "end": "present"
+                    "end": "Present"
                 },
                 "description": "Pursuing a B.S. in mathematics @ <a href='https://www.utexas.edu/' target='_blank' rel='noopener'>UT Austin</a>. Emphasis on the B.S. 😉",
             }
@@ -86,9 +86,9 @@ function onEachFeature(feature, layer) {
 
         layer.bindPopup(
             `
-            <h2 class="popup-city">${props.name}</h2>
-            <p class="popup-text"><b>WHEN</b>: ${props.period.start} ${props.period.end ? `- ${props.period.end}` : ``}</p>
-            <p class="popup-text"><b>WHY</b>: ${props.description}</p>
+            <h2 class="map-popup-text">${props.name}</h2>
+            <p class="map-popup-text"><b>WHEN</b>: ${props.period.start} ${props.period.end ? `- ${props.period.end}` : ``}</p>
+            <p class="map-popup-text"><b>WHY</b>: ${props.description}</p>
             `
         )
     }
@@ -157,7 +157,7 @@ const MapComponent = function () {
 module.exports = {
     view() {
         return [
-            m('h1.title', 'Whereabouts'),
+            m('h1.text-center', 'Whereabouts'),
             m('div.text-center', 'If you\'re on mobile, I suggest turning your screen horizontally.'),
             m('br'),
             m('#map-container.border-dark', m(MapComponent))

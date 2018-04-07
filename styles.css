@@ -1,5 +1,5 @@
 :root {
-    --default-color: #363636; /* #262626 */
+    --default-color: #363636;
     --alternate-color: #f1f1f1;
 }
 
@@ -11,13 +11,18 @@
     background-color: #2d96cd;
 }
 
+
 /******************** Mobile ********************/
 @media screen and (max-width: 600px) {
-    .content {
-        font-size: 1rem;
+    body {
+        font-size: 1rem !important;
     }
 
     footer {
+        font-size: .75rem !important;
+    }
+
+    .map-popup-text {
         font-size: .75rem !important;
     }
 }
@@ -39,7 +44,7 @@ body {
     margin-left: 0;
     display: flex;
     justify-content: center;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'IBM Plex Mono', 'Courier New', sans-serif;
     font-size: 1.5rem;
 }
 
@@ -157,12 +162,6 @@ a:hover, .nav__link:focus {
     cursor: pointer;
 }
 
-.title {
-    font-family: 'Cutive Mono', serif;
-    font-weight: bold;
-    text-align: center;
-}
-
 .social {
     display: flex;
     flex-direction: row;
@@ -175,12 +174,6 @@ a:hover, .nav__link:focus {
     padding: 0 1.5rem;
 }
 
-
-/******************** Map ********************/
-.popup-city {
-    font-family: 'Cutive Mono', serif;
-}
-
-.popup-text {
-    font-family: 'IBM Plex Sans', sans-serif;
+.map-popup-text {
+    font-family: 'IBM Plex Mono', 'Courier New', sans-serif;
 }
