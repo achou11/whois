@@ -16,8 +16,8 @@
 - [Gopherize.me](https://gopherize.me)
 - [Feather Icons](https://feathericons.com)
 - [Leaflet](https://leafletjs.org)
-- [Mithril](https://mithril.js.org)
 - [Marked](https://marked.js.org)
+- [Mithril](https://mithril.js.org)
 - [webpack](https://webpack.js.org)
 
 
