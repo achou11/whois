@@ -13,8 +13,8 @@
 
 - [Babel](https://babeljs.io)
 - [Beaker Browser](https://beakerbrowser.com)
-- [Gopherize.me](https://gopherize.me)
 - [Feather Icons](https://feathericons.com)
+- [Gopherize.me](https://gopherize.me)
 - [Leaflet](https://leafletjs.org)
 - [Marked](https://marked.js.org)
 - [Mithril](https://mithril.js.org)
