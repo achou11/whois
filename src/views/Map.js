@@ -86,7 +86,7 @@ function onEachFeature(feature, layer) {
 
         layer.bindPopup(
             `
-            <h2 class="map-popup-text">${props.name}</h2>
+            <h2 class="map-popup-text title">${props.name}</h2>
             <p class="map-popup-text"><b>WHEN</b>: ${props.period.start} ${props.period.end ? `- ${props.period.end}` : ``}</p>
             <p class="map-popup-text"><b>WHY</b>: ${props.description}</p>
             `
@@ -157,7 +157,7 @@ const MapComponent = function () {
 module.exports = {
     view() {
         return [
-            m('h1.text-center', 'Whereabouts'),
+            m('h1.text-center.title', 'Whereabouts'),
             m('div.text-center', 'If you\'re on mobile, I suggest turning your screen horizontally.'),
             m('br'),
             m('#map-container.border-dark', m(MapComponent))

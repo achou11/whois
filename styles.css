@@ -1,3 +1,7 @@
+/* Import lunchtype22 font family */
+@import url('./fonts/lunchtype22/stylesheet.css');
+
+
 :root {
     --default-color: #363636;
     --alternate-color: #f1f1f1;
@@ -44,7 +48,7 @@ body {
     margin-left: 0;
     display: flex;
     justify-content: center;
-    font-family: 'IBM Plex Mono', 'Courier New', sans-serif;
+    font-family: 'lunchtype22light', sans-serif;
     font-size: 1.25rem;
 }
 
@@ -135,6 +139,10 @@ footer {
     text-align: center;
 }
 
+.title {
+    font-family: 'lunchtype22regular', sans-serif;
+}
+
 
 /******************** More specific ********************/
 #map {
@@ -175,5 +183,5 @@ a:hover, .nav__link:focus {
 }
 
 .map-popup-text {
-    font-family: 'IBM Plex Mono', 'Courier New', sans-serif;
+    font-family: 'lunchtype22light', sans-serif;
 }

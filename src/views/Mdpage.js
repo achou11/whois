@@ -11,7 +11,7 @@ module.exports = {
         }
 
         return m('div', [
-            m('h1.text-center', vnode.attrs.title), 
+            m('h1.text-center.title', vnode.attrs.title), 
             m.trust(Text)
         ])
     }
