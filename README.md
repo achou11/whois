@@ -15,6 +15,7 @@
 
 - [Babel](https://babeljs.io)
 - [Beaker Browser](https://beakerbrowser.com)
+- [Dat Badge](https://badge-krismuniz.hashbase.io/)
 - [Feather Icons](https://feathericons.com)
 - [Gopherize.me](https://gopherize.me)
 - [Leaflet](http://leafletjs.org)
