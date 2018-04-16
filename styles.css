@@ -19,15 +19,15 @@
 /******************** Mobile ********************/
 @media screen and (max-width: 600px) {
     body {
-        font-size: 1rem !important;
+        font-size: 1.25rem !important;
     }
 
     footer {
-        font-size: .75rem !important;
+        font-size: 1rem !important;
     }
 
     .map-popup-text {
-        font-size: .75rem !important;
+        font-size: .8rem !important;
     }
 }
 
@@ -49,7 +49,7 @@ body {
     display: flex;
     justify-content: center;
     font-family: 'lunchtype22light', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 .grid {
@@ -93,7 +93,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-self: flex-end;
-    font-size: 1rem;
+    font-size: 1.25rem;
     margin-bottom: 1rem;
 }
 
@@ -184,4 +184,5 @@ a:hover, .nav__link:focus {
 
 .map-popup-text {
     font-family: 'lunchtype22light', sans-serif;
+    font-size: 1rem;
 }
