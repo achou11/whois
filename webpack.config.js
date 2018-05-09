@@ -1,11 +1,12 @@
 const marked = require('marked');
 const CompressionPlugin = require('compression-webpack-plugin')
-
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 const renderer = new marked.Renderer();
 
 
 module.exports = {
     plugins: [
+        new BundleAnalyzerPlugin(),
         new CompressionPlugin({
             asset: "[path].gz[query]",
             algorithm: "gzip",
