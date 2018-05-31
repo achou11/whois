@@ -1,4 +1,4 @@
-My name is Andrew. I like to call myself a software developer (see home page), but I'm definitely still in the process of learning a bunch of things. It'll always be that way.
+My name is Andrew. I like to call myself a software engineer (see home page), but I'm definitely still in the process of learning a bunch of things. It'll always be that way.
 
 At the very heart of it, I'm a tech enthusiast. Software just happens to foster my curiosity, and I'm confident in its power to drive social good.
 
