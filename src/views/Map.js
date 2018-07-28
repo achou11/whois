@@ -64,6 +64,21 @@ const layer = {
                 },
                 "description": "Data intern @ <a href='https://nexttier.com/' target='_blank' rel='noopener'>NextTier Education</a> and mapping intern @ <a href='https://www.hotosm.org/'  target='_blank' rel='noopener'>Humanitarian OpenStreetMap Team</a> (HOT)."
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-77.000397, 38.907801]
+            },
+            "properties": {
+                "name": "Washington, D.C.",
+                "period": {
+                    "start": "2018 (Summer)",
+                    "end": null
+                },
+                "description": "Civic Digital Fellow @ <a href='https://www.census.gov/' target='_blank' rel='noopener'>U.S. Census Bureau</a> through <a href='https://www.codingitforward.com/' target='_blank' rel='noopener'>Coding it Forward</a>."
+            }
         }
     ]
 }
