@@ -162,7 +162,7 @@ module.exports = {
       m('h1.text-center.title', 'Whereabouts'),
       m('div.text-center', 'If you\'re on mobile, I suggest turning your screen horizontally.'),
       m('br'),
-      m('#map-container.border-dark', m(MapComponent))
+      m('#map-container.border-dark.top-margin-small', m(MapComponent))
     ]
   }
 }

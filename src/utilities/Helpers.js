@@ -10,7 +10,7 @@ module.exports = {
     // Change address bar theme
     let addr_bar = document.querySelector('meta[name="theme-color"]').content
 
-    if (addr_bar == '#363636') {
+    if (addr_bar === '#363636') {
       document.querySelector('meta[name="theme-color"]').content = '#f1f1f1'
     } else {
       document.querySelector('meta[name="theme-color"]').content = '#363636'
@@ -18,7 +18,7 @@ module.exports = {
 
     // Change body theme
     let currentTheme = document.body.className
-    document.body.className = currentTheme == 'theme-dark' ? 'theme-light' : 'theme-dark'
+    document.body.className = currentTheme === 'theme-dark' ? 'theme-light' : 'theme-dark'
 
     // Change map border color
     if (document.getElementById('map-container')) {

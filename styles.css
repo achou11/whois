@@ -182,6 +182,10 @@ a:hover, .nav__link:focus {
     padding: 0 1.5rem;
 }
 
+.top-margin-small {
+    margin-top: 1em;
+}
+
 .map-popup-text {
     font-family: 'lunchtype22light', sans-serif;
     font-size: 1rem;
