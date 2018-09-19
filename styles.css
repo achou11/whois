@@ -54,7 +54,7 @@ body {
 
 .grid {
     display: grid;
-    grid-template-rows: 5% auto 5%;
+    grid-template-rows: auto;
     grid-template-areas: 
       "nav"
       "content"
