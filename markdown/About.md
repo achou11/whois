@@ -6,8 +6,8 @@ Programming languages and tech that I've worked with:
 
 - Python
 - JavaScript/HTML/CSS
+- Node
 - Go
 - Rust
 - bash
 - SQL and relational databases
-- NoSQL databases (Mongo is interesting but there are a ton of other cool solutions too)

@@ -8,9 +8,9 @@ module.exports = {
 
   changeTheme () {
     // Change address bar theme
-    let addr_bar = document.querySelector('meta[name="theme-color"]').content
+    let addrBar = document.querySelector('meta[name="theme-color"]').content
 
-    if (addr_bar === '#363636') {
+    if (addrBar === '#363636') {
       document.querySelector('meta[name="theme-color"]').content = '#f1f1f1'
     } else {
       document.querySelector('meta[name="theme-color"]').content = '#363636'

@@ -71,7 +71,7 @@ nav {
     top: 25px;
     display: flex;
     justify-content: space-around;
-    transform: skew(45deg);
+    transform: skew(135deg);
     height: 25px;
 }
 
@@ -155,7 +155,7 @@ a {
 }   
 
 .nav__link {
-    transform: skew(-45deg);
+    transform: skew(-135deg);
 }
 
 a:hover, .nav__link:focus {
