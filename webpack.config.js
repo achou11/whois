@@ -7,13 +7,13 @@ module.exports = {
   plugins: [
     // new BundleAnalyzerPlugin(),
     new CompressionPlugin({
-        compressionOptions: {
-            asset: '[path].gz[query]',
-            algorithm: 'gzip',
-            test: /\.js$|\.css$|\.html$/,
-            threshold: 10240,
-            minRatio: 0.8
-        }
+      compressionOptions: {
+        asset: '[path].gz[query]',
+        algorithm: 'gzip',
+        test: /\.js$|\.css$|\.html$/,
+        threshold: 10240,
+        minRatio: 0.8
+      }
     })
   ],
   devServer: {
@@ -47,7 +47,7 @@ module.exports = {
       use: {
         loader: 'babel-loader',
         options: {
-            presets: ['@babel/preset-env']
+          presets: ['@babel/preset-env']
         }
       }
     }

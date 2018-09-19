@@ -12,7 +12,7 @@ A: January 22, 1997
 
 **Q: What's the best way to contact you?**
 
-A: Definitely <a href="https://twitter.com/botherchou" target="_blank" rel="noopener>Twitter</a>.
+A: Definitely <a href="https://twitter.com/botherchou" target="_blank" rel="noopener">Twitter</a>.
 
 ---
 
