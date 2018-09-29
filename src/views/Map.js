@@ -28,11 +28,10 @@ const layer = {
       'name': 'Austin, Texas',
       'period': {
         'start': '2015',
-        'end': 'Present'
+        'end': '2018'
       },
       'description': "Pursuing a B.S. in mathematics @ <a href='https://www.utexas.edu/' target='_blank' rel='noopener'>UT Austin</a>. Emphasis on the B.S. 😉"
     }
-
   },
   {
     'type': 'Feature',
@@ -77,6 +76,21 @@ const layer = {
         'end': null
       },
       'description': "Civic Digital Fellow @ <a href='https://www.census.gov/' target='_blank' rel='noopener'>U.S. Census Bureau</a> through <a href='https://www.codingitforward.com/' target='_blank' rel='noopener'>Coding it Forward</a>."
+    }
+  },
+  {
+    'type': 'Feature',
+    'geometry': {
+      'type': 'Point',
+      'coordinates': [-71.1512, 42.3267]
+    },
+    'properties': {
+      'name': 'Boston, MA',
+      'period': {
+        'start': '2018',
+        'end': 'Present'
+      },
+      'description': "Software engineer @ <a href='https://www.wayfair.com/' target='_blank' rel='noopener'>Wayfair</a>."
     }
   }
   ]
