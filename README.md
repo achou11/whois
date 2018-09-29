@@ -26,11 +26,11 @@
 
 
 ## To-do list:
+- Re-do this site from scratch
 - Refactor the nav-scroll listener and add it to the `Nav` component
 - CSS can always use some help
 - Optimize my webpack configuration i.e. code-splitting and other relevant techniques (**NEED LOTS OF HELP WITH THIS**)
-- Add some PWA features (**WOULD LOVE ANY GUIDANCE ON THIS**)
+- Add some PWA features?
+- Add myself to [webring](https://webring.xxiivv.com/)
 
 Feel free to reach out to me about tips or suggestions! If you want to add an issue or even submit a pull request, that works too :)
-
-
