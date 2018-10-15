@@ -82,7 +82,7 @@ const layer = {
     'type': 'Feature',
     'geometry': {
       'type': 'Point',
-      'coordinates': [-71.1512, 42.3267]
+      'coordinates': [42.3518, -71.1512]
     },
     'properties': {
       'name': 'Boston, MA',
