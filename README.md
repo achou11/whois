@@ -1,6 +1,6 @@
 ![Dat](https://dat-badge.glitch.me/fff4d1e843621b508b08fe87b893b5e231fba74344733ba434d3c17c071fc95c/badge.svg)
 
-# This is the source code for personal my site:
+# This is the source code for my personal site:
 ### [whois-andrewchou.hashbase.io](https://whois-andrewchou.hashbase.io)
 
 ## Some useful commands if you clone this repo:
