@@ -17,12 +17,11 @@
 - [Beaker Browser](https://beakerbrowser.com)
 - [Dat Badge](https://badge-krismuniz.hashbase.io/)
 - [Feather Icons](https://feathericons.com)
-- [Gopherize.me](https://gopherize.me)
 - [Leaflet](http://leafletjs.org)
 - [Lunchtype](http://lunchtype.com)
 - [Marked](https://marked.js.org)
 - [Mithril](https://mithril.js.org)
-- [webpack](https://webpack.js.org)
+- [Webpack](https://webpack.js.org)
 
 
 ## To-do list:
