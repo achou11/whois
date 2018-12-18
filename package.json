@@ -7,7 +7,7 @@
     "build": "webpack --mode production",
     "dev-server": "webpack-dev-server --mode development",
     "prod-server": "webpack-dev-server --mode production",
-    "live-server": "live-server --port=8000 --entry-file='./index.html'"
+    "live-server": "live-server --port=8000 --no-browser --entry-file='./index.html'"
   },
   "author": {
     "name": "Andrew Chou",

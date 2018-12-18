@@ -1,7 +1,6 @@
 /* Import lunchtype22 font family */
 @import url('./fonts/lunchtype22/stylesheet.css');
 
-
 :root {
     --default-color: #363636;
     --alternate-color: #f1f1f1;
@@ -14,7 +13,6 @@
 ::selection {
     background-color: #2d96cd;
 }
-
 
 /******************** Mobile ********************/
 @media screen and (max-width: 600px) {
