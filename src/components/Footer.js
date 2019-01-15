@@ -17,7 +17,7 @@ module.exports = {
 
   view () {
     return m('footer', [
-      m.trust('<span>Copyright &copy; 2018 Andrew Chou</span>'),
+      m.trust('<span>Copyright &copy; 2019 Andrew Chou</span>'),
       m('a#source-url', { target: '_blank', rel: 'noopener' }, 'View Source')
     ])
   }
