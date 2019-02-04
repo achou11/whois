@@ -21,7 +21,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "feather-icons": "^4.15.0",
+    "feather-icons": "^4.16.0",
     "leaflet": "^1.4.0",
     "mithril": "^1.1.6"
   },
