@@ -21,7 +21,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "feather-icons": "^4.16.0",
+    "feather-icons": "^4.17.0",
     "leaflet": "^1.4.0",
     "mithril": "^1.1.6"
   },
@@ -33,9 +33,9 @@
     "html-loader": "^0.5.5",
     "markdown-loader": "^5.0.0",
     "marked": "^0.6.0",
-    "webpack": "^4.29.1",
+    "webpack": "^4.29.2",
     "webpack-bundle-analyzer": "^3.0.3",
-    "webpack-cli": "^3.2.1",
+    "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.1.14"
   }
 }
