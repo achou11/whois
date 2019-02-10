@@ -90,7 +90,7 @@ const layer = {
         'start': '2018',
         'end': 'Present'
       },
-      'description': "Software engineer @ <a href='https://www.wayfair.com/' target='_blank' rel='noopener'>Wayfair</a>."
+      'description': "Software engineer @ <a href='https://consider.co/' target='_blank' rel='noopener'>Consider</a>. Former software engineer @ <a href='https://www.wayfair.com/' target='_blank' rel='noopener'>Wayfair</a>."
     }
   }
   ]
@@ -112,8 +112,8 @@ function onEachFeature (feature, layer) {
     layer.bindPopup(
       `
             <h2 class="map-popup-text title">${props.name}</h2>
-            <p class="map-popup-text"><b>WHEN</b>: ${props.period.start} ${props.period.end ? `- ${props.period.end}` : ``}</p>
-            <p class="map-popup-text"><b>WHY</b>: ${props.description}</p>
+            <p class="map-popup-text"><b>When</b>: ${props.period.start} ${props.period.end ? `- ${props.period.end}` : ``}</p>
+            <p class="map-popup-text"><b>Why</b>: ${props.description}</p>
             `
     )
   }
