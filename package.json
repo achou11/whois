@@ -26,14 +26,14 @@
     "mithril": "^1.1.6"
   },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
+    "@babel/core": "^7.3.3",
     "@babel/preset-env": "^7.3.1",
     "babel-loader": "^8.0.5",
     "compression-webpack-plugin": "^2.0.0",
     "html-loader": "^0.5.5",
     "markdown-loader": "^5.0.0",
     "marked": "^0.6.0",
-    "webpack": "^4.29.4",
+    "webpack": "^4.29.5",
     "webpack-bundle-analyzer": "^3.0.4",
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.1.14"
