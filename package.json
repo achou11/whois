@@ -21,21 +21,21 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "feather-icons": "^4.17.0",
+    "feather-icons": "^4.19.0",
     "leaflet": "^1.4.0",
     "mithril": "^1.1.6"
   },
   "devDependencies": {
-    "@babel/core": "^7.3.3",
-    "@babel/preset-env": "^7.3.1",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
     "babel-loader": "^8.0.5",
     "compression-webpack-plugin": "^2.0.0",
     "html-loader": "^0.5.5",
     "markdown-loader": "^5.0.0",
     "marked": "^0.6.1",
-    "webpack": "^4.29.5",
+    "webpack": "^4.29.6",
     "webpack-bundle-analyzer": "^3.0.4",
     "webpack-cli": "^3.2.3",
-    "webpack-dev-server": "^3.2.0"
+    "webpack-dev-server": "^3.2.1"
   }
 }
