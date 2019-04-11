@@ -35,7 +35,7 @@
     "markdown-loader": "^5.0.0",
     "marked": "^0.6.2",
     "webpack": "^4.29.6",
-    "webpack-bundle-analyzer": "^3.3.0",
+    "webpack-bundle-analyzer": "^3.3.2",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.3.1"
   }
