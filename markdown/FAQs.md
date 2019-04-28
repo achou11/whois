@@ -4,9 +4,9 @@ A: It's pronounced *chew* - not *cho*, not *chow* - just Chou.
 
 ---
 
-**Q: When's your birthday?**
+**Q: What's with the rhombus?**
 
-A: January 22, 1997
+A: I recently decided that it was my favorite shape (reason pending). To prove it, I got a tattoo of one.
 
 ---
 
