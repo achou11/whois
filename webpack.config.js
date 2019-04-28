@@ -1,6 +1,5 @@
 const marked = require('marked')
 const CompressionPlugin = require('compression-webpack-plugin')
-// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 const renderer = new marked.Renderer()
 
 module.exports = {
@@ -24,33 +23,25 @@ module.exports = {
     hot: true
   },
   module: {
-    rules: [{
-      test: /\.md$/,
-      use: [{
-        loader: 'html-loader'
-      },
+    rules: [
       {
-        loader: 'markdown-loader',
-        options: {
-          ghf: true,
-          breaks: true,
-          smartypants: true,
-          xhtml: true,
-          renderer
-        }
+        test: /\.md$/,
+        use: [
+          {
+            loader: 'html-loader'
+          },
+          {
+            loader: 'markdown-loader',
+            options: {
+              ghf: true,
+              breaks: true,
+              smartypants: true,
+              xhtml: true,
+              renderer
+            }
+          }
+        ]
       }
-      ]
-    },
-    {
-      test: /\.js$/,
-      exclude: /node_modules/,
-      use: {
-        loader: 'babel-loader',
-        options: {
-          presets: ['@babel/preset-env']
-        }
-      }
-    }
     ]
   }
 }
