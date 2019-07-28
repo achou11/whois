@@ -1,14 +1,11 @@
-const m = require('mithril')
-const feather = require('feather-icons')
+import m from 'mithril'
+import feather from 'feather-icons'
 
-module.exports = {
-  generateIcon (name) {
-    return m.trust(feather.icons[name].toSvg()) // I hope there's a better way to do this
-  },
-
-  changeTheme () {
+const helpers = {
+  generateIcon: name => m.trust(feather.icons[name].toSvg()), // I hope there's a better way to do this
+  changeTheme: () => {
     // Change address bar theme
-    let addrBar = document.querySelector('meta[name="theme-color"]').content
+    const addrBar = document.querySelector('meta[name="theme-color"]').content
 
     if (addrBar === '#363636') {
       document.querySelector('meta[name="theme-color"]').content = '#f1f1f1'
@@ -17,13 +14,13 @@ module.exports = {
     }
 
     // Change body theme
-    let currentTheme = document.body.className
-    document.body.className = currentTheme === 'theme-dark' ? 'theme-light' : 'theme-dark'
+    const currentTheme = document.body.className
+    document.body.className =
+      currentTheme === 'theme-dark' ? 'theme-light' : 'theme-dark'
 
     // Change map border color
     if (document.getElementById('map-container')) {
-      let mapBorderColor = document.getElementById('map-container')
-      console.log(mapBorderColor)
+      const mapBorderColor = document.getElementById('map-container')
 
       switch (mapBorderColor.className) {
         case 'border-light':
@@ -38,7 +35,7 @@ module.exports = {
 
     // Change nav border color
     if (document.getElementById('nav-bar')) {
-      let navBar = document.getElementById('nav-bar')
+      const navBar = document.getElementById('nav-bar')
 
       if (navBar.classList.contains('background-light')) {
         navBar.classList.add('background-dark')
@@ -60,3 +57,5 @@ module.exports = {
     }
   }
 }
+
+export default helpers

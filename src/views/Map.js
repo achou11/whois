@@ -1,98 +1,104 @@
-const m = require('mithril')
-const L = require('leaflet')
+import m from 'mithril'
+import L from 'leaflet'
 
 const layer = {
-  'type': 'FeatureCollection',
-  'features': [{
-    'type': 'Feature',
-    'geometry': {
-      'type': 'Point',
-      'coordinates': [-73.71006, 40.848415]
-    },
-    'properties': {
-      'name': 'Port Washington, New York',
-      'period': {
-        'start': '1997',
-        'end': '2015'
+  type: 'FeatureCollection',
+  features: [
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [-73.71006, 40.848415]
       },
-      'description': 'I grew up here. Not much of a choice for this one.'
-    }
-  },
-  {
-    'type': 'Feature',
-    'geometry': {
-      'type': 'Point',
-      'coordinates': [-97.748306, 30.285085]
+      properties: {
+        name: 'Port Washington, New York',
+        period: {
+          start: '1997',
+          end: '2015'
+        },
+        description: 'I grew up here. Not much of a choice for this one.'
+      }
     },
-    'properties': {
-      'name': 'Austin, Texas',
-      'period': {
-        'start': '2015',
-        'end': '2018'
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [-97.748306, 30.285085]
       },
-      'description': "Pursuing a B.S. in mathematics @ <a href='https://www.utexas.edu/' target='_blank' rel='noopener'>UT Austin</a>. Emphasis on the B.S. 😉"
-    }
-  },
-  {
-    'type': 'Feature',
-    'geometry': {
-      'type': 'Point',
-      'coordinates': [-122.3321, 47.6062]
+      properties: {
+        name: 'Austin, Texas',
+        period: {
+          start: '2015',
+          end: '2018'
+        },
+        description:
+          "Pursuing a B.S. in mathematics @ <a href='https://www.utexas.edu/' target='_blank' rel='noopener'>UT Austin</a>. Emphasis on the B.S. 😉"
+      }
     },
-    'properties': {
-      'name': 'Seattle, Washington',
-      'period': {
-        'start': '2016 (Summer)',
-        'end': null
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [-122.3321, 47.6062]
       },
-      'description': "Spent the summer with my twin brother, who goes to UW, and worked as a cashier @ <a href='https://www.pacificsciencecenter.org/' target='_blank' rel='noopener'>Pacific Science Center</a>."
-    }
-  },
-  {
-    'type': 'Feature',
-    'geometry': {
-      'type': 'Point',
-      'coordinates': [-87.630385, 41.882331]
+      properties: {
+        name: 'Seattle, Washington',
+        period: {
+          start: '2016 (Summer)',
+          end: null
+        },
+        description:
+          "Spent the summer with my twin brother, who goes to UW, and worked as a cashier @ <a href='https://www.pacificsciencecenter.org/' target='_blank' rel='noopener'>Pacific Science Center</a>."
+      }
     },
-    'properties': {
-      'name': 'Chicago, Illinois',
-      'period': {
-        'start': '2017 (Summer)',
-        'end': null
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [-87.630385, 41.882331]
       },
-      'description': "Data intern @ <a href='https://nexttier.com/' target='_blank' rel='noopener'>NextTier Education</a> and mapping intern @ <a href='https://www.hotosm.org/'  target='_blank' rel='noopener'>Humanitarian OpenStreetMap Team</a> (HOT)."
-    }
-  },
-  {
-    'type': 'Feature',
-    'geometry': {
-      'type': 'Point',
-      'coordinates': [-77.000397, 38.907801]
+      properties: {
+        name: 'Chicago, Illinois',
+        period: {
+          start: '2017 (Summer)',
+          end: null
+        },
+        description:
+          "Data intern @ <a href='https://nexttier.com/' target='_blank' rel='noopener'>NextTier Education</a> and mapping intern @ <a href='https://www.hotosm.org/'  target='_blank' rel='noopener'>Humanitarian OpenStreetMap Team</a> (HOT)."
+      }
     },
-    'properties': {
-      'name': 'Washington, D.C.',
-      'period': {
-        'start': '2018 (Summer)',
-        'end': null
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [-77.000397, 38.907801]
       },
-      'description': "Civic Digital Fellow @ <a href='https://www.census.gov/' target='_blank' rel='noopener'>U.S. Census Bureau</a> through <a href='https://www.codingitforward.com/' target='_blank' rel='noopener'>Coding it Forward</a>."
-    }
-  },
-  {
-    'type': 'Feature',
-    'geometry': {
-      'type': 'Point',
-      'coordinates': [-71.084873, 42.351794]
+      properties: {
+        name: 'Washington, D.C.',
+        period: {
+          start: '2018 (Summer)',
+          end: null
+        },
+        description:
+          "Civic Digital Fellow @ <a href='https://www.census.gov/' target='_blank' rel='noopener'>U.S. Census Bureau</a> through <a href='https://www.codingitforward.com/' target='_blank' rel='noopener'>Coding it Forward</a>."
+      }
     },
-    'properties': {
-      'name': 'Boston, MA',
-      'period': {
-        'start': '2018',
-        'end': 'Present'
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [-71.084873, 42.351794]
       },
-      'description': "Software engineer @ <a href='https://consider.co/' target='_blank' rel='noopener'>Consider</a>. Former software engineer @ <a href='https://www.wayfair.com/' target='_blank' rel='noopener'>Wayfair</a>."
+      properties: {
+        name: 'Boston, MA',
+        period: {
+          start: '2018',
+          end: 'Present'
+        },
+        description:
+          "Software engineer @ <a href='https://consider.co/' target='_blank' rel='noopener'>Consider</a>. Former software engineer @ <a href='https://www.wayfair.com/' target='_blank' rel='noopener'>Wayfair</a>."
+      }
     }
-  }
   ]
 }
 
@@ -107,12 +113,14 @@ const geojsonMarkerOptions = {
 
 function onEachFeature (feature, layer) {
   if (feature.properties) {
-    let props = feature.properties
+    const props = feature.properties
 
     layer.bindPopup(
       `
             <h2 class="map-popup-text title">${props.name}</h2>
-            <p class="map-popup-text"><b>When</b>: ${props.period.start} ${props.period.end ? `- ${props.period.end}` : ``}</p>
+            <p class="map-popup-text"><b>When</b>: ${props.period.start} ${
+  props.period.end ? `- ${props.period.end}` : ``
+}</p>
             <p class="map-popup-text"><b>Why</b>: ${props.description}</p>
             `
     )
@@ -120,11 +128,8 @@ function onEachFeature (feature, layer) {
 }
 
 // Add some listener to map for phone rotation?
-const MapComponent = function () {
-  let map
-
+const MapComponent = () => {
   return {
-
     oncreate () {
       // fix map border color bug when applying theme change before switching to map page
       if (document.body.className === 'theme-dark') {
@@ -137,10 +142,14 @@ const MapComponent = function () {
         zoomControl: false
       }).setView([38, -98], window.innerWidth > 550 ? 4 : 3)
 
-      L.tileLayer('https://api.mapbox.com/styles/v1/andrewchou/cj3nmat3z002b2sqnvy3g2c04/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYW5kcmV3Y2hvdSIsImEiOiJjajJqeXR5b2cwMGRiMnFucW53NWJmNjlnIn0.LmmouuLX7C6EE61cOUez3A', {
-        maxZoom: 15,
-        accessToken: 'pk.eyJ1IjoiYW5kcmV3Y2hvdSIsImEiOiJjajJqeXR5b2cwMGRiMnFucW53NWJmNjlnIn0x.LmmouuLX7C6EE61cOUez3A'
-      }).addTo(map)
+      L.tileLayer(
+        'https://api.mapbox.com/styles/v1/andrewchou/cj3nmat3z002b2sqnvy3g2c04/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYW5kcmV3Y2hvdSIsImEiOiJjajJqeXR5b2cwMGRiMnFucW53NWJmNjlnIn0.LmmouuLX7C6EE61cOUez3A',
+        {
+          maxZoom: 15,
+          accessToken:
+            'pk.eyJ1IjoiYW5kcmV3Y2hvdSIsImEiOiJjajJqeXR5b2cwMGRiMnFucW53NWJmNjlnIn0x.LmmouuLX7C6EE61cOUez3A'
+        }
+      ).addTo(map)
 
       // Add markers to map
       new L.GeoJSON(layer, {
@@ -152,17 +161,12 @@ const MapComponent = function () {
       }).addTo(map)
 
       // Put zoom control at bottomleft of page instead of default topleft
-      L.control.zoom({
-        position: 'bottomleft'
-      }).addTo(map)
+      L.control
+        .zoom({
+          position: 'bottomleft'
+        })
+        .addTo(map)
     },
-
-    // This shit ain't working
-    /*
-        onremove() {
-            map.remove()
-        },
-        */
 
     view () {
       return m('#map')
@@ -170,13 +174,18 @@ const MapComponent = function () {
   }
 }
 
-module.exports = {
+const Map = {
   view () {
     return [
       m('h1.text-center.title', 'Whereabouts'),
-      m('div.text-center', 'If you\'re on mobile, I suggest turning your screen horizontally.'),
-      m('br'),
+      m(
+        'div.text-center',
+        "If you're on mobile, I suggest turning your screen horizontally."
+      ),
+      m('br.top-margin-small'),
       m('#map-container.border-dark.top-margin-small', m(MapComponent))
     ]
   }
 }
+
+export default Map

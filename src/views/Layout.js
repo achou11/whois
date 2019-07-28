@@ -1,8 +1,8 @@
-const m = require('mithril')
-const Nav = require('../components/Nav')
-const Footer = require('../components/Footer')
+import m from 'mithril'
+import Nav from '../components/Nav'
+import Footer from '../components/Footer'
 
-module.exports = {
+const Layout = {
   view (vnode) {
     return m('div.grid', [
       m(Nav),
@@ -11,3 +11,5 @@ module.exports = {
     ])
   }
 }
+
+export default Layout

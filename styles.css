@@ -1,6 +1,10 @@
 /* Import lunchtype22 font family */
 @import url('./fonts/lunchtype22/stylesheet.css');
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
     --default-color: #363636;
     --alternate-color: #f1f1f1;
@@ -12,6 +16,12 @@
 
 ::selection {
     background-color: #2d96cd;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
 }
 
 /******************** Mobile ********************/
@@ -92,7 +102,7 @@ footer {
     justify-content: space-between;
     align-self: flex-end;
     font-size: 1.25rem;
-    margin-bottom: 1rem;
+    padding-bottom: 1rem;
 }
 
 

@@ -1,24 +1,10 @@
-const m = require('mithril')
-const Social = require('../components/Social')
+import m from 'mithril'
+import Social from '../components/Social'
 
-module.exports = {
-  oncreate () {
-    drawRhombus()
-  },
-
-  view () {
-    return [
-      m('h1.text-center.title', 'Andrew Chou'),
-      m('canvas#rhombus'),
-      m(Social)
-    ]
-  }
-}
-
-function drawRhombus () {
-  let canvas = document.getElementById('rhombus')
+const drawRhombus = () => {
+  const canvas = document.getElementById('rhombus')
   if (canvas.getContext) {
-    let ctx = canvas.getContext('2d')
+    const ctx = canvas.getContext('2d')
     ctx.lineWidth = 2
 
     // Figure out how to change the stroke color dynamically based on theme
@@ -35,3 +21,19 @@ function drawRhombus () {
     ctx.stroke()
   }
 }
+
+const Home = {
+  oncreate () {
+    drawRhombus()
+  },
+
+  view () {
+    return [
+      m('h1.text-center.title', 'Andrew Chou'),
+      m('canvas#rhombus'),
+      m(Social)
+    ]
+  }
+}
+
+export default Home

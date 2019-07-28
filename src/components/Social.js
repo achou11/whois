@@ -1,5 +1,5 @@
-const m = require('mithril')
-const helper = require('../utilities/Helpers')
+import m from 'mithril'
+import helpers from '../utilities/helpers'
 
 const icons = [
   {
@@ -16,7 +16,7 @@ const icons = [
 
   {
     name: 'codepen',
-    title: 'See my \'pens',
+    title: 'See my pens',
     url: 'https://codepen.io/andrew_chou'
   },
 
@@ -27,10 +27,19 @@ const icons = [
   }
 ]
 
-module.exports = {
+const Social = {
   view () {
-    return m('div.social', icons.map((icon) => {
-      return m(`a[href=${icon.url}].social__link`, { title: icon.title, target: '_blank', rel: 'noopener' }, helper.generateIcon(icon.name))
-    }))
+    return m(
+      'div.social',
+      icons.map(icon => {
+        return m(
+          `a[href=${icon.url}].social__link`,
+          { title: icon.title, target: '_blank', rel: 'noopener' },
+          helpers.generateIcon(icon.name)
+        )
+      })
+    )
   }
 }
+
+export default Social
