@@ -80,7 +80,7 @@ nav {
     display: flex;
     justify-content: space-around;
     transform: skew(135deg);
-    height: 25px;
+    height: 30px;
 }
 
 .content-wrapper {
